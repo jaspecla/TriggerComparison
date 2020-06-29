@@ -39,7 +39,7 @@ jobs:
       with:
         app-name: 'triggercomparison-demo-fn'
         app-settings-json: >-
-          [{"name": "AzureStorageConnectionString", "value": "${{ secrets.AzureStorageConnectionString }}", "slotSetting": false},
-          {"name": "AzureSignalRConnectionString", "value": "${{ secrets.AzureSignalRConnectionString }}", "slotSetting": false}
+          [{"name": "AzureStorageConnectionString", "value": "${{ secrets.AZURESTORAGECONNECTIONSTRING }}", "slotSetting": false},
+          {"name": "AzureSignalRConnectionString", "value": "${{ secrets.AZURESIGNALRCONNECTIONSTRING }}", "slotSetting": false}
           ]
       id: settings
