@@ -35,14 +35,7 @@ namespace EventGridTriggerFunctionApp
       var fileUri = new Uri(blobEvent.Url);
       string fileName;
 
-      if (fileUri.IsFile)
-      {
-        fileName = Path.GetFileName(fileUri.LocalPath);
-      } 
-      else
-      {
-        fileName = blobEvent.Url;
-      }
+      fileName = Path.GetFileName(fileUri.AbsolutePath);
 
       var message = new BlobMessage
       {

@@ -1,4 +1,4 @@
-name: Deploy AdventureWorks Azure Function
+name: Deploy Trigger Demo Blob Triggered Function
 
 on:
   push:

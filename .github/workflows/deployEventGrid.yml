@@ -1,4 +1,4 @@
-name: Deploy AdventureWorks Azure Function
+name: Deploy Trigger Demo Event Grid Triggered Function
 
 on:
   push:
