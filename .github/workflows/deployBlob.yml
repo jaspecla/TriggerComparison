@@ -21,7 +21,7 @@ jobs:
         dotnet-version: 3.1.101
         
     - name: Build with dotnet
-      run: dotnet build --configuration Release --output ./fnDeploy
+      run: dotnet build BlobTriggeredFunctionApp/BlobTriggeredFunctionApp.csproj --configuration Release --output ./fnDeploy
       
     - name: Login to Azure
       uses: azure/login@v1
