@@ -2,9 +2,10 @@ name: Deploy AdventureWorks Azure Function
 
 on:
   push:
+    branches: master
     paths: 
-      - 'TriggerComparison/**'
-      - '.github/workflows/deploy.yml'
+      - 'EventGridTriggeredFunctionApp/**'
+      - '.github/workflows/deployEventGrid.yml'
 
 jobs:
   build:
@@ -31,15 +32,14 @@ jobs:
       uses: Azure/functions-action@v1
       id: fa
       with:
-        app-name: 'triggercomparison-demo-fn'
+        app-name: 'eventgridtriggered-demo'
         package: './fnDeploy'
       
     - name: "Set Function App Service Settings"
       uses: azure/appservice-settings@v1
       with:
-        app-name: 'triggercomparison-demo-fn'
+        app-name: 'eventgridtriggered-demo'
         app-settings-json: >-
-          [{"name": "AzureStorageConnectionString", "value": "${{ secrets.AZURESTORAGECONNECTIONSTRING }}", "slotSetting": false},
-          {"name": "AzureSignalRConnectionString", "value": "${{ secrets.AZURESIGNALRCONNECTIONSTRING }}", "slotSetting": false}
+          [{"name": "AzureSignalRConnectionString", "value": "${{ secrets.AZURESIGNALRCONNECTIONSTRING }}", "slotSetting": false}
           ]
       id: settings

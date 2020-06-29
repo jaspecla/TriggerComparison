@@ -10,8 +10,9 @@ using Newtonsoft.Json;
 using Microsoft.Azure.WebJobs.Extensions.SignalRService;
 using System.Threading.Tasks;
 using System.IO;
+using BlobData;
 
-namespace TriggerComparison
+namespace EventGridTriggerFunctionApp
 {
   public static class EventGridTrigger
   {

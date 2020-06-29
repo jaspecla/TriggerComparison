@@ -3,12 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30223.230
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriggerComparison", "TriggerComparison\TriggerComparison.csproj", "{BB6C7C1C-1275-403A-8BE0-5B094CAC38E9}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{2983AF38-FC56-4FF1-8E7E-7ACA45729974}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\deploy.yml = .github\workflows\deploy.yml
+		.github\workflows\deployBlob.yml = .github\workflows\deployBlob.yml
+		.github\workflows\deployEventGrid.yml = .github\workflows\deployEventGrid.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventGridTriggeredFunctionApp", "EventGridTriggeredFunctionApp\EventGridTriggeredFunctionApp.csproj", "{F639B05F-50B6-451C-9A83-159E1F9E5F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobTriggeredFunctionApp", "BlobTriggeredFunctionApp\BlobTriggeredFunctionApp.csproj", "{29675E18-4A52-47E7-9B4A-FD3BDD1E7595}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobData", "BlobData\BlobData.csproj", "{A3BEE2F3-D19E-41F4-A10A-3BF8B367CB42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,10 +21,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BB6C7C1C-1275-403A-8BE0-5B094CAC38E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB6C7C1C-1275-403A-8BE0-5B094CAC38E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB6C7C1C-1275-403A-8BE0-5B094CAC38E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB6C7C1C-1275-403A-8BE0-5B094CAC38E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F639B05F-50B6-451C-9A83-159E1F9E5F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F639B05F-50B6-451C-9A83-159E1F9E5F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F639B05F-50B6-451C-9A83-159E1F9E5F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F639B05F-50B6-451C-9A83-159E1F9E5F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29675E18-4A52-47E7-9B4A-FD3BDD1E7595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29675E18-4A52-47E7-9B4A-FD3BDD1E7595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29675E18-4A52-47E7-9B4A-FD3BDD1E7595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29675E18-4A52-47E7-9B4A-FD3BDD1E7595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3BEE2F3-D19E-41F4-A10A-3BF8B367CB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3BEE2F3-D19E-41F4-A10A-3BF8B367CB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3BEE2F3-D19E-41F4-A10A-3BF8B367CB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3BEE2F3-D19E-41F4-A10A-3BF8B367CB42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

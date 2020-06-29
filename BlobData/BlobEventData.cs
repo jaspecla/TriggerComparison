@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TriggerComparison
+namespace BlobData
 {
   public class BlobEventData
   {
