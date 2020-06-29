@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30223.230
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriggerComparison", "TriggerComparison\TriggerComparison.csproj", "{BB6C7C1C-1275-403A-8BE0-5B094CAC38E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB6C7C1C-1275-403A-8BE0-5B094CAC38E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6C7C1C-1275-403A-8BE0-5B094CAC38E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB6C7C1C-1275-403A-8BE0-5B094CAC38E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6C7C1C-1275-403A-8BE0-5B094CAC38E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E6E136E-61EC-4BAE-B38E-647EB2DC0A2E}
+	EndGlobalSection
+EndGlobal
