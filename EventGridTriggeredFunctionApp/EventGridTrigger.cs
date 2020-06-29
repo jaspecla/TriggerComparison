@@ -11,6 +11,7 @@ using Microsoft.Azure.WebJobs.Extensions.SignalRService;
 using System.Threading.Tasks;
 using System.IO;
 using BlobData;
+using System.Net;
 
 namespace EventGridTriggerFunctionApp
 {
@@ -29,13 +30,13 @@ namespace EventGridTriggerFunctionApp
       if (blobEvent == null)
       {
         log.LogError("Could not parse blob event data from EventGrid event.");
-        throw new Exception("Could not parse blob event data from EVentGrid event.");
+        throw new Exception("Could not parse blob event data from EventGrid event.");
       }
 
       var fileUri = new Uri(blobEvent.Url);
       string fileName;
 
-      fileName = Path.GetFileName(fileUri.AbsolutePath);
+      fileName = WebUtility.UrlDecode(Path.GetFileName(fileUri.AbsolutePath));
 
       var message = new BlobMessage
       {
