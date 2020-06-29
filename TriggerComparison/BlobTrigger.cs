@@ -21,7 +21,7 @@ namespace TriggerComparison
 
       var message = new BlobMessage
       {
-        TriggerType = "Event Grid",
+        TriggerType = "Blob",
         FileName = name,
         TimeProcessed = DateTime.Now
       };
